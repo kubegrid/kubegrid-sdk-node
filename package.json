@@ -13,7 +13,8 @@
     "scripts": {
         "test": "./node_modules/.bin/mocha --timeout=10000",
         "example": "node example/app.js",
-        "report": "nyc -r text -r lcov report"
+        "report": "nyc -r text -r lcov report",
+        "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
     "dependencies": {
         "kubegrid-sdk-node": "^0.0.5",
