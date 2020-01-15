@@ -1,7 +1,7 @@
 # KubeGrid Node.js Library
 
 [![Version](https://img.shields.io/npm/v/kubegrid-sdk-node.svg)](https://www.npmjs.org/package/kubegrid-sdk-node)
-[![Build Status](https://travis-ci.org/kubegrid/kubegrid-sdk-node.svg?branch=master)](https://travis-ci.org/kubegrid/kubegrid-sdk-node)
+[![Build Status](https://travis-ci.com/kubegrid/kubegrid-sdk-node.svg?branch=master)](https://travis-ci.org/kubegrid/kubegrid-sdk-node)
 [![Coverage Status](https://coveralls.io/repos/github/kubegrid/kubegrid-sdk-node/badge.svg)](https://coveralls.io/github/kubegrid/kubegrid-sdk-node)
 [![Downloads](https://img.shields.io/npm/dm/kubegrid-sdk-node.svg)](https://www.npmjs.com/package/kubegrid-sdk-node)
 
@@ -54,7 +54,7 @@ const kubegrid = require('kubegrid')(kgApiKey);
 
 ## Development
 
-Run all tests:
+Run all tests, please note you have to export your credentials by `export KG_TEST_API_KEY=<your-KubeGrid-API-key` first
 
 ```
 yarn install
