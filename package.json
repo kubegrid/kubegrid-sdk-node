@@ -12,7 +12,8 @@
     "license": "MIT",
     "scripts": {
         "test": "./node_modules/.bin/mocha --timeout=10000",
-        "example": "node example/app.js"
+        "example": "node example/app.js",
+        "report": "nyc -r text -r lcov report"
     },
     "dependencies": {
         "kubegrid-sdk-node": "^0.0.5",
@@ -22,6 +23,12 @@
     "devDependencies": {
         "chai": "^4.2.0",
         "global-tunnel": "^1.2.0",
-        "mocha": "^7.0.0"
-    }
+        "mocha": "^7.0.0",
+        "nyc": "^15.0.0"
+    },
+    "bugs:": "https://github.com/kubegrid/kubegrid-sdk-node/issues",
+    "engines": {
+        "node": "^8.1 || >=10.*"
+    },
+    "engineStrict": true
 }
