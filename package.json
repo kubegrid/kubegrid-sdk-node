@@ -1,0 +1,27 @@
+{
+    "name": "kubegrid-sdk-node",
+    "version": "0.0.7",
+    "description": "Node.js library for the KubeGrid API https://api-docs.kubegrid.com/",
+    "main": "lib/kubegrid.js",
+    "homepage": "https://api-docs.kubegrid.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kubegrid/kubegrid-sdk-node"
+    },
+    "author": "team@kubegrid.com",
+    "license": "MIT",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha --timeout=10000",
+        "example": "node example/app.js"
+    },
+    "dependencies": {
+        "kubegrid-sdk-node": "^0.0.5",
+        "qs": "^6.9.1",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "global-tunnel": "^1.2.0",
+        "mocha": "^7.0.0"
+    }
+}
