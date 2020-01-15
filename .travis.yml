@@ -8,6 +8,6 @@ node_js:
     - '10'
 script:
     # - yarn test
-    - yarn report
+    - mkdir .nyc_output && yarn report
 sudo: false
 after_success: yarn report
