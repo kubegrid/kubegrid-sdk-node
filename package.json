@@ -1,6 +1,6 @@
 {
     "name": "kubegrid-sdk-node",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Node.js library for the KubeGrid API https://api-docs.kubegrid.com/",
     "main": "lib/kubegrid.js",
     "homepage": "https://api-docs.kubegrid.com",
@@ -17,7 +17,6 @@
         "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
     "dependencies": {
-        "kubegrid-sdk-node": "^0.0.5",
         "qs": "^6.9.1",
         "request": "^2.88.0"
     },
