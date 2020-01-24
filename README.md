@@ -52,6 +52,19 @@ const kubegrid = require('kubegrid')(kgApiKey);
 
 ```
 
+## KubeGrid on-premise integration
+
+Just pass the `host` attribute when initializing kubegrid object:
+
+```
+const kgApiKey = process.env.KG_API_KEY;
+
+const kubegrid = require('kubegrid-sdk-node')(kgApiKey, {
+    host: 'api.yourhostname.com'
+});
+```
+Also don't forget to take the new API Key from your host instead of KubeGrid server.
+
 ## Development
 
 Run all tests, please note you have to export your credentials by `export KG_TEST_API_KEY=<your-KubeGrid-API-key` first
