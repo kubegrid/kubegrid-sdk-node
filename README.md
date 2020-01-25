@@ -62,6 +62,9 @@ const kgApiKey = process.env.KG_API_KEY;
 const kubegrid = require('kubegrid-sdk-node')(kgApiKey, {
     host: 'api.yourhostname.com'
 });
+
+kubegrid.setProtocol('http');
+kubegrid.setTimeout(20000);
 ```
 Also don't forget to take the new API Key from your host instead of KubeGrid server.
 
