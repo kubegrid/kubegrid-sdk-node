@@ -1,11 +1,6 @@
 const kgApiKey = process.env.KUBEGRID_API_KEY;
 
-const kubegrid = require('../lib/kubegrid')(kgApiKey, {
-  host: 'localhost',
-  port: 90
-});
-
-kubegrid.setProtocol('http');
+const kubegrid = require('kubegrid-sdk-node')(kgApiKey);
 
 // Create new repository profile
 kubegrid.repositoryProfile.create({
