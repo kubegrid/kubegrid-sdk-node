@@ -1,9 +1,16 @@
 const kgApiKey = process.env.KUBEGRID_API_KEY;
 
 const kubegrid = require('../lib/kubegrid')(kgApiKey, {
-    host: 'api-viciniti.kubegrid.net'
+    host: 'localhost',
+    port: 90
 });
+kubegrid.setProtocol("http");
 
-kubegrid.selfManagedServer.delete(31).then(resp => {
-    console.log(':::: RESPONSE::::', resp);
-});
+kubegrid.appType
+    .list()
+    .then(appTypes => {
+        console.log(appTypes);
+    })
+    .catch(err => {
+        console.error('error', err);
+    });
