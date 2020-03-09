@@ -1,6 +1,6 @@
 {
     "name": "kubegrid-sdk-node",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Node.js library for the KubeGrid API https://api-docs.kubegrid.com/",
     "main": "lib/kubegrid.js",
     "homepage": "https://api-docs.kubegrid.com",
