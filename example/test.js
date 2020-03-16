@@ -6,10 +6,40 @@ const kubegrid = require('../lib/kubegrid')(kgApiKey, {
 });
 kubegrid.setProtocol("http");
 
-kubegrid.appType
-    .list()
-    .then(appTypes => {
-        console.log(appTypes);
+// kubegrid.cluster
+//     .listApps(34)
+//     .then(apps => {
+//         console.log(apps);
+//     })
+//     .catch(err => {
+//         console.error('error', err);
+//     });
+
+// kubegrid.cluster
+//     .attachApp(34, {
+//         app_ids: [3]
+//     })
+//     .then(apps => {
+//         console.log(apps);
+//     })
+//     .catch(err => {
+//         console.error('error', err);
+//     });
+
+// kubegrid.cluster
+//     .deleteApp(34, 3)
+//     .then(appTypes => {
+//         console.log(appTypes);
+//     })
+//     .catch(err => {
+//         console.error('error', err);
+//     });
+
+
+kubegrid.cluster
+    .deployApp(34, 3)
+    .then(app => {
+        console.log(app);
     })
     .catch(err => {
         console.error('error', err);
